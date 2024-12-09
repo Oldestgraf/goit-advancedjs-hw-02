@@ -80,7 +80,7 @@ fieldset > label {
   height: 32px;
 }
 
-button {
+.form > button {
   margin-top: 24px;
   display: flex;
   padding: 8px 16px;
@@ -97,6 +97,6 @@ button {
   letter-spacing: 0.64px;
 }
 
-button:hover {
+.form > button:hover {
   background: #6c8cff;
 }
