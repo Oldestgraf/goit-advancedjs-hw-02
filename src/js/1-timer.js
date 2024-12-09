@@ -11,9 +11,9 @@ const hoursElement = document.querySelector('[data-hours]');
 const minutesElement = document.querySelector('[data-minutes]');
 const secondsElement = document.querySelector('[data-seconds]');
 
-const labels = document.querySelectorAll('.label')
+const labels = document.querySelectorAll('.label');
 labels.forEach(label => {
-    label.textContent = label.textContent.toUpperCase()
+    label.textContent = label.textContent.toUpperCase();
 });
 
 startButton.disabled = true;
@@ -37,7 +37,7 @@ const options = {
             startButton.disabled = false;
         }
     },
-};
+}
 
 flatpickr("#datetime-picker", options);
 
@@ -57,7 +57,7 @@ function startTimer() {
             const time = convertMs(timeDifference);
             updateUI(time);
         }
-    })
+    }, 1000);
 }
 
 function updateUI({ days, hours, minutes, seconds }) {
