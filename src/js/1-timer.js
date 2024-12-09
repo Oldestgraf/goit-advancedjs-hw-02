@@ -1,8 +1,6 @@
 import flatpickr from "flatpickr";
 import iziToast from "izitoast";
 
-
-
 let userSelectedDate = null;
 let timerInterval = null;
 
